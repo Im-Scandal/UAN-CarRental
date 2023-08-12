@@ -1267,7 +1267,7 @@ void ingresosPorAutos()
 
 void comprobacionArchivo()
 {
-    fstream baseDatos("Base_Datos.txt", ios::in);
+    fstream baseDatos("Base_Datos_UAN CAR RENTAL.txt", ios::in);
     if (baseDatos.is_open())
     {
         while (getline(baseDatos, line))
@@ -1283,7 +1283,7 @@ void comprobacionArchivo()
     }
     else
     {
-        baseDatos.open("Base_Datos.txt", ios::out);
+        baseDatos.open("Base_Datos_UAN CAR RENTAL.txt", ios::out);
 
         baseDatos << "Placa,\n";
         baseDatos << "Marca,\n";
